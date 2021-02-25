@@ -11,7 +11,8 @@ const createMessage = async (req, res) => {
     image_url: body.image_url,
     message_status: body.message_status,
     created_at: body.created_at,
-    forwaded: Number(body.forwaded)
+    forwaded: Number(body.forwaded),
+    replies: body.replies
   });
 
   try {
