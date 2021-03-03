@@ -14,7 +14,7 @@ const MessageSchema = mongoose.Schema(
     },
     image_url: [String],
     message_status: { type: Boolean, default: false },
-    created_at: Date,
+    created_at: { type: Date, default: Date.now() },
     forwaded: { type: Number, default: 0 }
   },
   {

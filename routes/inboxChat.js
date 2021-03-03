@@ -1,7 +1,10 @@
 const router = require("express").Router();
-const { createInboxChat, getInboxes, getInboxChat, deleteInboxChat } = requir(
-  "../controllers/inboxChat"
-);
+const {
+  createInboxChat,
+  getInboxes,
+  getInboxChat,
+  deleteInboxChat
+} = require("../controllers/inboxChat");
 
 router.post("/", createInboxChat);
 router.get("/", getInboxes);
